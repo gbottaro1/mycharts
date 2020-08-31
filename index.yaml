@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  nadine:
+  - apiVersion: v2
+    appVersion: 2.3.0
+    created: "2020-08-31T02:57:02.7671519-03:00"
+    description: A Helm's Nadine chart for Kubernetes
+    digest: 191578d148e25686a184d30d42b31ae4aab4e7fdb294ed4fde9a4056acfb6055
+    name: nadine
+    type: application
+    urls:
+    - nadine-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-08-31T02:57:02.7671519-03:00"
