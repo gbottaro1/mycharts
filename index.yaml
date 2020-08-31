@@ -3,7 +3,7 @@ entries:
   nadine:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2020-08-31T02:57:02.7671519-03:00"
+    created: "2020-08-31T11:05:10.4240723-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: 191578d148e25686a184d30d42b31ae4aab4e7fdb294ed4fde9a4056acfb6055
     name: nadine
@@ -11,4 +11,22 @@ entries:
     urls:
     - nadine-0.1.0.tgz
     version: 0.1.0
-generated: "2020-08-31T02:57:02.7671519-03:00"
+  nadinedjango:
+  - apiVersion: v2
+    appVersion: 2.3.0
+    created: "2020-08-31T11:05:10.4250616-03:00"
+    dependencies:
+    - name: nadinedb
+      repository: https://gbottaro1.github.io/mycharts/
+      version: 2.3.0
+    - name: nadinefakesmtp
+      repository: https://gbottaro1.github.io/mycharts/
+      version: 2.3.0
+    description: A Helm's Nadine chart for Kubernetes
+    digest: 22c93e2a26bfc50735a4a21031d5b583aa9f63b3e388610aeff55b9eba12ba7f
+    name: nadinedjango
+    type: application
+    urls:
+    - nadinedjango-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-08-31T11:05:10.4146903-03:00"
