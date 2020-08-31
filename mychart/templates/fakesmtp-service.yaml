@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fakesmtp
+spec:
+  selector:
+    app: fakesmtp
+  ports:
+  - port: 1025
+    targetPort: 25

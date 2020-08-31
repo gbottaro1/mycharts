@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: fakesmtp
+    app.kubernetes.io/instance: fakesmtp-nadine
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/component: smtp
+    app.kubernetes.io/part-of: nadine
+  name: fakesmtp
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: fakesmtp
+  template:
+    metadata:
+      labels:
+        app: fakesmtp
+    spec:
+      containers:
+      - image: gbottaro/nadine-fakesmtp:1.0.1
+        name: fakesmtp
+        ports:
+        - containerPort: 25
+        resources: {}
+        volumeMounts:
+        - mountPath: /var/mail
+          name: fakesmtp-claim0
+      restartPolicy: Always
+      volumes:
+      - name: fakesmtp-claim0
+        persistentVolumeClaim:
+          claimName: fakesmtp-claim0
