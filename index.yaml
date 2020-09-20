@@ -3,9 +3,9 @@ entries:
   booked:
   - apiVersion: v2
     appVersion: 2.4.8
-    created: "2020-09-20T16:09:48.7066987-03:00"
-    description: A Booked's Nadine chart for Kubernetes
-    digest: 9be93354b4bb7fc645596b5cab59860339ba570156b1855f1ff74a53f8f63b2c
+    created: "2020-09-20T20:08:14.681026-03:00"
+    description: A Helm's Booked chart for Kubernetes
+    digest: 08d6cae1e5a14fc87ca246fa6f0b006266558fbba23c060956ba60b700f21a2e
     name: booked
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   nadine:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2020-09-20T16:09:48.7451383-03:00"
+    created: "2020-09-20T20:08:14.799208-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: a3376ec63a92d2dabcf63cdd48a745fd4ff621e33aee214880d9c2b0327e7813
     name: nadine
@@ -24,7 +24,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2020-09-20T16:09:48.7319328-03:00"
+    created: "2020-09-20T20:08:14.7396537-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: 191578d148e25686a184d30d42b31ae4aab4e7fdb294ed4fde9a4056acfb6055
     name: nadine
@@ -32,4 +32,4 @@ entries:
     urls:
     - nadine-0.1.0.tgz
     version: 0.1.0
-generated: "2020-09-20T16:09:48.7056628-03:00"
+generated: "2020-09-20T20:08:14.6800299-03:00"
