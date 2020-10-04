@@ -3,9 +3,9 @@ entries:
   andino:
   - apiVersion: v2
     appVersion: "0.2"
-    created: "2020-10-04T02:59:05.1946622-03:00"
+    created: "2020-10-04T03:54:25.4068248-03:00"
     description: A Helm's Andino chart for Kubernetes
-    digest: ae9207c74913b60d62e120f6a0d81a642ce17df0777c6bad7c91922ffe4ab0e5
+    digest: 3b55faec635304130878753d992c079216a28fb3a5528d555f6d12c1d0554aa7
     name: andino
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   booked:
   - apiVersion: v2
     appVersion: 2.4.8
-    created: "2020-10-04T02:59:05.2239211-03:00"
+    created: "2020-10-04T03:54:25.4546601-03:00"
     description: A Helm's Booked chart for Kubernetes
     digest: e818118018323da2b40de40ec9cf0b421614caefd7f89df80767916c9de7f330
     name: booked
@@ -25,7 +25,7 @@ entries:
   nadine:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2020-10-04T02:59:05.2620232-03:00"
+    created: "2020-10-04T03:54:25.4746587-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: a3376ec63a92d2dabcf63cdd48a745fd4ff621e33aee214880d9c2b0327e7813
     name: nadine
@@ -35,7 +35,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2020-10-04T02:59:05.2478839-03:00"
+    created: "2020-10-04T03:54:25.4696582-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: 191578d148e25686a184d30d42b31ae4aab4e7fdb294ed4fde9a4056acfb6055
     name: nadine
@@ -43,4 +43,4 @@ entries:
     urls:
     - nadine-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-04T02:59:05.1926637-03:00"
+generated: "2020-10-04T03:54:25.4027772-03:00"
