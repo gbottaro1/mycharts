@@ -3,7 +3,7 @@ entries:
   andino:
   - apiVersion: v2
     appVersion: "0.2"
-    created: "2020-10-08T04:33:44.6543938-03:00"
+    created: "2021-05-04T21:11:41.2288046-03:00"
     description: A Helm's Andino chart for Kubernetes
     digest: 28624e3a84abe39c7e7df0c4ec19e0967298516cfbc72f7bd67f2d331e7c8612
     name: andino
@@ -13,7 +13,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: "0.2"
-    created: "2020-10-08T04:33:44.6533937-03:00"
+    created: "2021-05-04T21:11:41.2120464-03:00"
     description: A Helm's Andino chart for Kubernetes
     digest: 55b6afa600b5cc164c324c8e2b828b5e07b672731f2e25fb7118130b2355d709
     name: andino
@@ -24,7 +24,7 @@ entries:
   booked:
   - apiVersion: v2
     appVersion: 2.4.8
-    created: "2020-10-08T04:33:44.6704745-03:00"
+    created: "2021-05-04T21:11:41.2447873-03:00"
     description: A Helm's Booked chart for Kubernetes
     digest: e818118018323da2b40de40ec9cf0b421614caefd7f89df80767916c9de7f330
     name: booked
@@ -32,10 +32,53 @@ entries:
     urls:
     - booked-0.1.0.tgz
     version: 0.1.0
+  kube-prometheus:
+  - annotations:
+      category: Analytics
+    apiVersion: v2
+    appVersion: 0.47.1
+    created: "2021-05-04T21:11:41.2647972-03:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    - condition: exporters.enabled,exporters.node-exporter.enabled
+      name: node-exporter
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.x.x
+    - condition: exporters.enabled,exporters.kube-state-metrics.enabled
+      name: kube-state-metrics
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: kube-prometheus collects Kubernetes manifests to provide easy to
+      operate end-to-end Kubernetes cluster monitoring with Prometheus using the Prometheus
+      Operator.
+    digest: 050c4cfaffdcaca2a2d9f85a34e371c8662e16151f0252e2cc0a03da28be2bcb
+    home: https://github.com/bitnami/charts/tree/master/bitnami/kube-prometheus
+    icon: https://bitnami.com/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
+    keywords:
+    - prometheus
+    - alertmanager
+    - operator
+    - monitoring
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: kube-prometheus
+    sources:
+    - https://github.com/bitnami/bitnami-docker-prometheus-operator
+    - https://github.com/bitnami/bitnami-docker-prometheus
+    - https://github.com/bitnami/bitnami-docker-alertmanager
+    - https://github.com/prometheus-operator/kube-prometheus
+    urls:
+    - kube-prometheus-4.3.1.tgz
+    version: 4.3.1
   nadine:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2020-10-08T04:33:44.6995207-03:00"
+    created: "2021-05-04T21:11:41.2987111-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: a3376ec63a92d2dabcf63cdd48a745fd4ff621e33aee214880d9c2b0327e7813
     name: nadine
@@ -45,7 +88,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2020-10-08T04:33:44.6864756-03:00"
+    created: "2021-05-04T21:11:41.2853236-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: 191578d148e25686a184d30d42b31ae4aab4e7fdb294ed4fde9a4056acfb6055
     name: nadine
@@ -53,4 +96,4 @@ entries:
     urls:
     - nadine-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-08T04:33:44.6423966-03:00"
+generated: "2021-05-04T21:11:41.1884748-03:00"
