@@ -3,7 +3,7 @@ entries:
   andino:
   - apiVersion: v2
     appVersion: "0.2"
-    created: "2021-05-04T21:11:41.2288046-03:00"
+    created: "2021-05-27T10:56:28.3372019-03:00"
     description: A Helm's Andino chart for Kubernetes
     digest: 28624e3a84abe39c7e7df0c4ec19e0967298516cfbc72f7bd67f2d331e7c8612
     name: andino
@@ -13,7 +13,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: "0.2"
-    created: "2021-05-04T21:11:41.2120464-03:00"
+    created: "2021-05-27T10:56:28.3292489-03:00"
     description: A Helm's Andino chart for Kubernetes
     digest: 55b6afa600b5cc164c324c8e2b828b5e07b672731f2e25fb7118130b2355d709
     name: andino
@@ -24,7 +24,7 @@ entries:
   booked:
   - apiVersion: v2
     appVersion: 2.4.8
-    created: "2021-05-04T21:11:41.2447873-03:00"
+    created: "2021-05-27T10:56:28.3549791-03:00"
     description: A Helm's Booked chart for Kubernetes
     digest: e818118018323da2b40de40ec9cf0b421614caefd7f89df80767916c9de7f330
     name: booked
@@ -37,7 +37,7 @@ entries:
       category: Analytics
     apiVersion: v2
     appVersion: 0.47.1
-    created: "2021-05-04T21:11:41.2647972-03:00"
+    created: "2021-05-27T10:56:28.4260107-03:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -55,7 +55,7 @@ entries:
     description: kube-prometheus collects Kubernetes manifests to provide easy to
       operate end-to-end Kubernetes cluster monitoring with Prometheus using the Prometheus
       Operator.
-    digest: 050c4cfaffdcaca2a2d9f85a34e371c8662e16151f0252e2cc0a03da28be2bcb
+    digest: 03de67fdcc9479cbb3bcec584f70d03f7c34e3e88063f81df27827edf5a0007d
     home: https://github.com/bitnami/charts/tree/master/bitnami/kube-prometheus
     icon: https://bitnami.com/assets/stacks/prometheus-operator/img/prometheus-operator-stack-220x234.png
     keywords:
@@ -74,11 +74,45 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     urls:
     - kube-prometheus-4.3.1.tgz
-    version: 4.3.3
+    version: 4.3.1
+  moodle:
+  - annotations:
+      category: E-Learning
+    apiVersion: v2
+    appVersion: 3.11.0
+    created: "2021-05-27T10:56:28.4618938-03:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Moodle(TM) is a learning platform designed to provide educators,
+      administrators and learners with a single robust, secure and integrated system
+      to create personalised learning environments
+    digest: 452c94d9099d7e7e0b320e3bb05a4987acf05a230dcf07da0a947a19ecb95e5e
+    home: https://github.com/bitnami/charts/tree/master/bitnami/moodle
+    icon: https://bitnami.com/assets/stacks/moodle/img/moodle-stack-220x234.png
+    keywords:
+    - moodle
+    - learning
+    - php
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    name: moodle
+    sources:
+    - https://github.com/bitnami/bitnami-docker-moodle
+    - http://www.moodle.org/
+    urls:
+    - moodle-11.0.14.tgz
+    version: 11.0.14
   nadine:
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2021-05-04T21:11:41.2987111-03:00"
+    created: "2021-05-27T10:56:28.4819209-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: a3376ec63a92d2dabcf63cdd48a745fd4ff621e33aee214880d9c2b0327e7813
     name: nadine
@@ -88,7 +122,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2021-05-04T21:11:41.2853236-03:00"
+    created: "2021-05-27T10:56:28.4772071-03:00"
     description: A Helm's Nadine chart for Kubernetes
     digest: 191578d148e25686a184d30d42b31ae4aab4e7fdb294ed4fde9a4056acfb6055
     name: nadine
@@ -96,4 +130,4 @@ entries:
     urls:
     - nadine-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-04T21:11:41.1884748-03:00"
+generated: "2021-05-27T10:56:28.3193554-03:00"
